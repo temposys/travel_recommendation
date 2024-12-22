@@ -54,3 +54,7 @@ function searchTrip() {
 }
 
 btnSearch.addEventListener('click', searchTrip);
+
+const options = { timeZone: 'America/Los_Angeles', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+const losAngelesTime = new Date().toLocaleTimeString('en-US', options);
+console.log("Current time in Seattle:", losAngelesTime);
