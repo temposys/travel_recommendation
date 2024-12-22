@@ -35,16 +35,17 @@ function searchTrip() {
 
             if (results.length > 0) {
                 for (let item of results) {
-                    if (item.cities !== undefined){
-                        for (let city of item.cities) {
-                            fillResult(resultDiv, city);
-                        }
-                    } else {
-                        fillResult(resultDiv, item);
-                    }
+                    fillResult(resultDiv, item);
                 }
             } else {
-                resultDiv.innerHTML = '<div class="result_item"><h3>No options found.</h3></div>';
+                let country = data['countries'].find(item => item.name.toLowerCase() === input);
+                if (country) {
+                    for (let city of country.cities) {
+                        fillResult(resultDiv, city);
+                    }
+                } else {
+                    resultDiv.innerHTML = '<div class="result_item"><h3>No options found.</h3></div>';
+                }
             }
         })
         .catch(error => {
