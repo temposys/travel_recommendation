@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelAdvisor: Contact Us</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<nav><h1>TravelAdvisor</h1>
+    <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+        <li><a href="./about_us.html" id="about">About Us</a></li>
+        <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
+    </ul>
+    <div></div>
+</nav>
+<div id="contact_us_page">
+    <h2>Contact Us</h2>
+    <div>
+        <p>
+            Get in touch...
+        </p>
+    </div>
+</div>
+<div id="contact_us_form">
+    <form id="contactForm">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email" />
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+        </div>
+        <button id="btnSubmit" type="submit" onclick="thankyou()">Send</button>
+    </form>
+</div>
+<div id="footer">
+    <a href="#">Facebook</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">YouTube</a>
+</div>
+<script>
+    function thankyou(){
+        alert('Thank you for your request!');
+    }
+</script>
+</body>
+</html>
