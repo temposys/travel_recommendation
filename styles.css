@@ -48,9 +48,10 @@ nav a {
     padding: 5px 10px;
     border: 0;
     width: 250px;
+    color: #333;
 }
 
-#search_bar button {
+#search_bar button, .visit {
     margin: 0 5px;
     padding: 5px 10px;
     border-radius: 7px;
@@ -83,6 +84,43 @@ body {
     width: 40%;
 }
 
+#resultDiv {
+    width: 50%;
+    margin-top: 100px;
+    height: 80%;
+    overflow-y: auto;
+}
+
+#main_page, #resultDiv {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#resultDiv .result_item {
+    background-color: rgba(255,255,255, 0.8);
+    margin-bottom: 10px;
+}
+
+#resultDiv h3 {
+    margin: 20px 30px;
+    font-size: 24px;
+    color: #444;
+    padding: 10px 0;
+}
+
+#resultDiv img {
+    width: 100%;
+}
+
+#resultDiv p {
+    margin: 10px 30px;
+    color: #444;
+}
+
+#resultDiv .visit {
+    margin: 10px 30px;
+}
+
 h2 {
     font-size: 90px;
     margin-bottom: 80px;
@@ -92,10 +130,6 @@ h2 {
 #main_page .description p {
     font-size: 30px;
     padding: 10px 0;
-}
-
-#main_page .description {
-    width: 30%;
 }
 
 #about_us_page p {
@@ -194,7 +228,7 @@ h2 {
     bottom: 20px;
     margin: 0 auto;
     width: 100%;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #footer a {
