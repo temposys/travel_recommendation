@@ -12,7 +12,7 @@ btnClear.addEventListener('click', resetForm);
 
 
 function fillResult(resultDiv, item) {
-    resultDiv.innerHTML += `<div class="result_item"><img src="${item.imageUrl}" alt="${item.name}">`
+    resultDiv.innerHTML += `<div class="result_item"><img src="images/${item.imageUrl}" alt="${item.name}">`
     + `<h3>${item.name}</h3>`
     + `<p>${item.description}</p>`
     + `<button class="visit">Visit</button></div>`;
@@ -28,7 +28,7 @@ function searchTrip() {
         .then(data => {
             let results = [];
             for (let key of Object.keys(data)) {
-                if (key.startsWith(input.toLowerCase())) {
+                if (key.startsWith(input.toLowerCase()) && key !== 'countries') {
                     results = data[key];
                 }
             }

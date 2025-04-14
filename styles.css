@@ -69,7 +69,7 @@ html, body {
     padding: 0;
 }
 body {
-    background-image: url(bg2.jpg);
+    background-image: url(images/bg2.jpg);
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
