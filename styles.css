@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: white;
+    color: #444;
 }
 
 /* Nav bar */
@@ -69,7 +69,7 @@ html, body {
     padding: 0;
 }
 body {
-    background-image: url(bg.jpg);
+    background-image: url(bg2.jpg);
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,8 +143,10 @@ h2 {
 }
 
 .transparent {
-    background-color: rgba(0,0,0, 0.4);
+    background-color: rgba(0,0,0, 0.1);
     border-radius: 10px;
+    padding: 30px 15px;
+    margin: 20px 0;
 }
 
 #btnBookNow, #btnSubmit {
